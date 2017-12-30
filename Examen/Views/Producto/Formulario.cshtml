@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Formulario";
+}
+
+@using (@Html.BeginForm("Guardar", "Producto", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+
+    <div class="signup-form-container">
+
+        <form role="form" id="register-form" autocomplete="off">
+
+            <div class="form-header">
+                <h3 class="form-title"><i class="fa fa-user"></i>Registrar Producto</h3>
+                <br>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <span class="col-md-6">
+                        @Html.TextBox("nombre", null, new { @class = "form-control", placeholder = "Ingresar Nombre" })
+                    </span>
+                </div>
+                <span class="help-block" id="error"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <span class="col-md-6">
+                        @Html.TextBox("codigobarra", null, new { @class = "form-control", placeholder = "Ingresar Codigo de Barra" })
+                    </span>
+                </div>
+                <span class="help-block" id="error"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                    <span class="col-md-6">
+                        @Html.TextBox("familia", null, new { @class = "form-control", placeholder = "Ingresar Familia" })
+                    </span>
+                </div>
+                <span class="help-block" id="error"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></div>
+                    <span class="col-md-6">
+                        @Html.TextBox("precio", null, new { @class = "form-control", placeholder = "Ingresar Precio" })
+                    </span>
+                </div>
+                <span class="help-block" id="error"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></div>
+                    <span class="col-md-6">
+                        @Html.TextBox("descuentotope", null, new { @class = "form-control", placeholder = "Ingresar Descuento Tope" })
+                    </span>
+                </div>
+                <span class="help-block" id="error"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-tree-conifer"></span></div>
+                    <span class="col-md-6">
+                        @Html.TextBox("descripcion", null, new { @class = "form-control", placeholder = "Ingresar Descripcion" })
+                    </span>
+                </div>
+                <span class="help-block" id="error"></span>
+            </div>
+
+
+            <div class="row">
+
+                <div class="form-footer">
+                    <button type="submit" class="btn btn-info">
+                        <span class="glyphicon glyphicon-log-in"></span> Guardar Producto
+                    </button>
+                </div>
+
+
+        </form>
+
+    </div>
+
+
+}

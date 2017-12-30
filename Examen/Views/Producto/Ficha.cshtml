@@ -1,0 +1,49 @@
+﻿@model Examen.Models.Producto
+
+@{
+    ViewBag.Title = "Ficha";
+}
+<h2>Datos Producto</h2>
+
+<fieldset class="form-horizontal">
+    <legend class="label">Informacion Producto</legend>
+
+
+    <label class="control-label">ID</label>
+    <div class="form-group">
+        <div class="label"> ID </div><div class="text-muted">@Html.DisplayFor(m => m.Id)</div>
+
+    </div>
+    <label class="control-label">Nombre</label>
+    <div class="form-group">
+        <div class="label"> Nombre </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Nombre)</div>
+    </div>
+    <label class="control-label">CodigoBarra</label>
+    <div class="form-group">
+        <div class="label"> Codigo de Barra </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.CodigoBarra)</div>
+    </div>
+    <label class="control-label">Familia</label>
+    <div class="form-group">
+        <div class="label"> Familia </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Familia)</div>
+    </div>
+    <label class="control-label">Precio</label>
+    <div class="form-group">
+        <div class="label"> Precio </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Precio)</div>
+    </div>
+    <label class="control-label">DescuentoTope</label>
+    <div class="form-group">
+        <div class="label"> Descuento Tope </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.DescuentoTope)</div>
+    </div>
+    <label class="control-label">Descripcion</label>
+    <div class="form-group">
+        <div class="label"> Descripcion </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Descripcion)</div>
+    </div>
+    
+    
+</fieldset>

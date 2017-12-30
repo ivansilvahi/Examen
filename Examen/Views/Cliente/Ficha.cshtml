@@ -1,0 +1,47 @@
+﻿@model Examen.Models.Cliente
+
+@{
+                /**/
+
+                ViewBag.Title = "Ficha";
+}
+<h2>Datos Producto</h2>
+
+<fieldset class="form-horizontal">
+    <legend class="label">Informacion Cliente</legend>
+
+
+    <label class="control-label">ID</label>
+    <div class="form-group">
+        <div class="label"> ID </div><div class="text-muted">@Html.DisplayFor(m => m.Id)</div>
+
+    </div>
+    <label class="control-label">Rut</label>
+    <div class="form-group">
+        <div class="label"> Rut </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Rut)</div>
+    </div>
+    <label class="control-label">Nombre</label>
+    <div class="form-group">
+        <div class="label"> Nombre </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Nombre)</div>
+    </div>
+    <label class="control-label">Apellido</label>
+    <div class="form-group">
+        <div class="label"> Apellido </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Apellido)</div>
+    </div>
+    <label class="control-label">Direccion</label>
+    <div class="form-group">
+        <div class="label"> Direccion </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.Direccion)</div>
+    </div>
+    <label class="control-label">TipoCliente</label>
+    <div class="form-group">
+        <div class="label"> Tipo Cliente </div>
+        <div class="text-muted">@Html.DisplayFor(m => m.TipoCliente)</div>
+    </div>
+
+
+
+</fieldset>

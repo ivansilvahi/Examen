@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Examen.Models.Producto>
+@{
+    ViewData["Title"] = "Listado";
+}
+<h2>Lista de Productos</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Codigo de Barras</th>
+    <th>Familia</th>
+    <th>Precio</th>
+    <th>Descuento Tope</th>
+    <th>Descripcion</th>
+
+
+    </thead>
+
+    <tbody>
+        @foreach (var p in Model)
+        {
+
+        <tr>
+            <td>@Html.DisplayFor(m => p.Id)</td>
+            <td>@Html.DisplayFor(m => p.Nombre)</td>
+            <td>@Html.DisplayFor(m => p.CodigoBarra)</td>
+            <td>@Html.DisplayFor(m => p.Familia)</td>
+            <td>@Html.DisplayFor(m => p.Precio)</td>
+            <td>@Html.DisplayFor(m => p.DescuentoTope)</td>
+            <td>@Html.DisplayFor(m => p.Descripcion)</td>
+
+            <td>@Html.ActionLink("Ver", "Ficha", new { id = p.Id })</td>
+            <td>@Html.ActionLink("Eliminar", "Eliminar", new { id = p.Id })</td>
+        </tr>
+        }
+    </tbody>
+</table>
